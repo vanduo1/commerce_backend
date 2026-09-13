@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: commerce-platform
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  secret-key: ${JWT_SECRET}
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+momo:
+  partner-code: ${MOMO_PARTNER_CODE}
+  access-key: ${MOMO_ACCESS_KEY}
+  secret-key: ${MOMO_SECRET_KEY}
+
+  endpoint: ${MOMO_ENDPOINT}
+  return-url: ${MOMO_RETURN_URL}
+  notify-url: ${MOMO_NOTIFY_URL}
