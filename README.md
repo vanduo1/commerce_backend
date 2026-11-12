@@ -93,7 +93,5 @@ The API is available at `http://localhost:8080`.
 | Orders   | `/api/orders`     |
 | Payments | `/api/payment`    |
 
-## License
 
-MIT
 
